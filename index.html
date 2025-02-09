@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body style="background-color:powderblue;"></body>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clever Walrus - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: powderblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .featured-products, .testimonials, .contact {
+            margin: 40px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer {
+            background-color: #ffcc00;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,6 +53,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <p><em>Bringing laughter and relaxation to the beach!</em></p>
@@ -24,6 +64,42 @@
         <h2>Welcome to Clever Walrus!</h2>
         <p>Looking for fun, quirky, and customizable beach gear? You've come to the right place! From inflatable walrus floats to tropical sunglasses, we bring joy to beachgoers everywhere.</p>
         <p>Explore our collection and get ready for a beach day like no other!</p>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <p>Check out our latest quirky beach gear!</p>
+            <img src="walrus-float.jpg" alt="Walrus Float" width="300">
+            <p><strong>Inflatable Walrus Float</strong> - The ultimate way to relax in style!</p>
+            <img src="beach-sunglasses.jpg" alt="Tropical Sunglasses" width="300">
+            <p><strong>Tropical Sunglasses</strong> - Look cool while keeping the sun out of your eyes!</p>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote>
+                "I never knew I needed a walrus float until now! Absolutely love it!" - Jamie L.
+            </blockquote>
+            <blockquote>
+                "The funniest and best beach gear I've ever bought. Highly recommend!" - Chris P.
+            </blockquote>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
 
     <footer>
